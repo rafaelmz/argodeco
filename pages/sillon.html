@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Argodeco</title>
+</head>
+<body>
+     <!--LOGO + BARRA BUSQUEDA + NAV MAIL-AYUDA-CONTACTO -->
+          <div class="container">
+       <div class="row align-items-center">
+        <div class="d-flex justify-content-center col-sm-12 col-lg-5 mt-5 mb-4">
+          <img src="../assets/img/logo.jpg" style="max-width: 60%;" class="rounded-circle border"  alt="logo">
+        </div>
+           <div class="col-sm-6 col-lg-7 mt-5">
+          <form class="d-flex mb-3">
+          <input  type="search" id="search" value="" onchange="barrabusqueda()" class="form-control me-2 body__barrapad border border-dark"  placeholder="Busca producto" aria-label="Search">
+          <button type="button" id="button" onclick="barrabusqueda()" value="Buscar"  class="btn btn-secondary" >Buscar</button>
+          </form>
+           <ul class="d-flex justify-content-around list-unstyled body__fz mt-2">
+                <li class="nav-item">
+                  <a class="nav-link text-body fw-bold">argonaut@deco.com.ar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body fw-bold" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body fw-bold" href="ayuda.html">AYUDA</a>
+                </li>
+                <li class="nav-item">
+                 <a href="carrito.html"><img src="../assets/img/carrito.png" style="max-width: 70%;" alt="carrito"></a>
+              </li>
+            </ul>
+        </div>          
+       </div>
+     </div>
+      <!---------------------------carro------------------------>
+      <div class="container mt-4 mb-4">
+        <div class="row">
+        <div class="col-sm-12 col-lg-12">
+        <div class="dropdown" >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CARRITO <span id="carritoCantidad" class="badge badge-light">0</span>
+          </button>
+          <div id="carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+        </div>
+        </div>
+        </div>
+      </div>  
+    <!---------------------BARRA NAV------------------------------>
+    <div class="container">
+    <div class="row font-weight-bold mt-4 mb-4">
+        <div class="col-sm-12 col-lg-12">
+            <ul class="nav justify-content-sm-around body__fz1">
+                <li class="nav-item">
+                    <a class="nav-link text-body fw-bold" href="alfombra.html">Alfombras</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link text-body fw-bold" href="lamparas.html">Lamparas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body fw-bold" href="sillas.html">Sillas</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body fw-bold" href="sillon.html">Sillones</a>
+                </li>
+            </ul> 
+            </div>
+         </div>
+    </div>
+     <!---------------------------PRODUCTOS sillomes------------------------>
+     <div class="container d-flex justify-content-center body__cardm">
+        <div class="col-lg-8 col-md-auto">
+            <div class="card bg-dark text-body">
+            <img src="../assets/img/sillongrisoscuro.jpg" class="card-img body__animacion" alt="sillon gris oscuro">
+            <div class="card-img-overlay">
+            <h4 class="card-title font-weight-bold">Sillon gris oscuro</h4>
+            <h5 class="card-title">Producto seleccionado</h5>
+            <p class="card-text font-weight-bold">$35000 pesos.</p>
+            <a href="#" id="24" class="btn btn-primary btn-compra" type="button">Comprar</a>
+            </div>
+        </div>    
+      </div>
+    </div>
+    <!---------------------------LISTA DE PRODUCTOS-CARD------------------------>
+    <div class="container mt-4">
+        <div class="col-lg-12 col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                  <img src="../assets/img/sillon1cuerpo.jpg" class="card-img-top body__hover" alt="sillon un cuerpo">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon un cuerpo gris clasico</h5>
+                    <h5 class="card-title font-weight-bold text-center">$9500 pesos.</h5>
+                    <a href="#" id="18" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../assets/img/sillon2cuerpos.jpg" class="card-img-top body__hover" alt="sillon dos cuerpos">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon dos cuerpos</h5>
+                    <h5 class="card-title font-weight-bold text-center">$18000 pesos.</h5>
+                    <a href="#" id="19" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../assets/img/silloncrema.jpg" class="card-img-top body__hover" alt="sillon crema">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon color crema</h5>
+                    <h5 class="card-title font-weight-bold text-center">$37000 pesos.</h5>
+                    <a href="#" id="21" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="col-lg-12 col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                  <img src="../assets/img/sillonesquinero.jpg" class="card-img-top body__hover" alt="sillon esquinero">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon esquinero</h5>
+                    <h5 class="card-title font-weight-bold text-center">$47000 pesos.</h5>
+                    <a href="#" id="20" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../assets/img/sillonesquineroblanco.jpg" class="card-img-top body__hover" alt="sillon esquinero">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon esquinero blanco</h5>
+                    <h5 class="card-title font-weight-bold text-center">$47000 pesos.</h5>
+                    <a href="#" id="22" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../assets/img/sillonverde.jpg" class="card-img-top body__hover" alt="sillon verde">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-center">Sillon verde</h5>
+                    <h5 class="card-title font-weight-bold text-center">$36000 pesos.</h5>
+                    <a href="#" id="25" class="btn btn-primary btn-compra d-flex justify-content-center" type="button">Comprar</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+     <!-----------------------------FOOTER----------------------------------->
+          <footer>
+     <div class="container mt-5 mb-4">
+       <div class="row">
+         <div class="col-sm-3 col-lg-3">
+           <img src="../assets/img/logofooter.jpg" alt="footerlogo" style="max-width: 100%;" class="rounded-circle border">
+         </div>
+         <div class="col-sm-3 col-lg-3">
+           <ul class="list-unstyled">
+                <li class="font-weight-bold">LA EMPRESA</li>
+                <li>Sobre nosotros</li>
+                <li>Sucursales</li>
+                <li>argonaut@deco.com.ar</li>
+            </ul>
+         </div>
+         <div class="col-sm-3 col-lg-3">
+           <ul class="list-unstyled">
+                <li class="font-weight-bold">INFORMACION</li>
+                <li>Como comprar</li>
+                <li>Servicios</li>
+            </ul>
+         </div>
+         <div class="col-sm-3 col-lg-3">
+           <ul class="list-unstyled">
+                <li class="font-weight-bold">MI CUENTA</li>
+                <li>Iniciar sesion</li>
+                <li>Registrarse</li>
+                <li>Carrito de compras</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    </footer>
+   <!-----------------------------FOOTER----------------------------------->     
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"   crossorigin="anonymous"></script>
+   <script src="../js/globales.js"></script>
+   <script src="../js/funciones.js"></script>
+   <script src="../js/producto.js"></script>
+   <script src="../js/main.js"></script>
+</body>
+</html>
